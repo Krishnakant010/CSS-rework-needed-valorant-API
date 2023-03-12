@@ -1,0 +1,75 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Valorant\ Font.ttf);
+}
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color: #ff4655;
+    --secondary-color: #fff
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+ 
+}
+
+img {
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* max-width: 1120px;
+    width: 100%; */
+    background: #0f1923;
+}
+h1{
+    color: var(--primary-color);
+    margin-left: 320px;
+    font-family: myFirstFont;
+}
+.nav-items{
+    margin-right: 350px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.hero-section{
+    display: flex;
+    gap:35px;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.container{
+    position: absolute;
+   background-color: antiquewhite;
+   
+   width: 100%;
+   top: 150px;
+   visibility: hidden;
+   transition: all 0.4s linear;
+}
+.card:hover .container{
+visibility: visible;
+transition: all 0.4s linear;
+}
